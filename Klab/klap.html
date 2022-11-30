@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login page</title>
+	<style>
+		import url("https://fonts.googleapis.com/css2?family=Alexandria&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background: linear-gradient(90deg, #4c6fff 50%, #e5ebf5 50%);
+}
+
+p {
+  font-family: "Alexandria", sans-serif;
+  margin: 0.3rem;
+  color: gray;
+  font-size: 13px;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 100;
+  font-family: "Alexandria", sans-serif;
+  margin: 0.3rem 0 1rem 0;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: "Alexandria", sans-serif;
+  margin: 0.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 80%;
+  height: 80%;
+  border-radius: 2rem;
+  margin: auto auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  align-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.logo {
+  width: "50%";
+  height: "100%";
+}
+
+.description-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+  text-align: center;
+  margin: 1rem 5rem;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slide {
+  background-color: #cbd5e0;
+  width: 5rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+}
+
+.slide.active {
+  background-color: #4c6fff;
+  width: 5rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7faff;
+  width: 50%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.termsandcondition {
+  display: flex;
+  flex-direction: row;
+  font-size: 11px;
+  text-align: center;
+}
+.button {
+  background-color: #4c6fff;
+  color: white;
+  font-family: "Alexandria", sans-serif;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-top: 1rem;
+
+.inputContainer {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  font-family: "Alexandria", sans-serif;
+  font-size: 12px;
+  border: gray 1px solid;
+  padding-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.inputContainer.last {
+  margin-bottom: 0;
+}
+
+.validator {
+  font-size: 11px;
+}
+
+}
+.icon {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: gray 0.5px solid;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.accounts {
+  font-size: 11px;
+  text-align: center;
+  color: gray;
+  font-family: "Alexandria", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+	</style>
+	
+</head>
+<body class="body">
+    <div class="container">
+      <div class="left">
+        <img
+          src="./1512b3eb04dda6ec4463344edb2ffd10.png"
+          alt="logo"
+          width="70%"
+          height="75%"
+        />
+        <p class="description-text">
+          Let's see what we have new, check it out! So maybe write here
+          something more.
+        </p>
+        <div class="slider-container">
+          <div class="slide active"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-container">
+          <h3>Create your account</h3>
+          <h4>It's free and easy</h4>
+          <form>
+            <p>Your Name</p>
+            <input
+              class="inputContainer"
+              type="text"
+              placeholder="Enter your name"
+            />
+            <p>E-mail or phone number</p>
+            <input
+              class="inputContainer"
+              type="email"
+              placeholder="Type your email or phone number"
+            />
+            <p>Password</p>
+            <input
+              class="inputContainer last"
+              type="password"
+              placeholder="Type your password"
+            />
+            <p class="validator">Must be 8 characters</p>
+            <div class="termsandcondition">
+              <input type="checkbox" />
+              <p>
+                By creating an account means you agree to the <b>Terms and
+                conditions</b>, and our <b>Privacy Policy</b>
+              </p>
+            </div>
+            <button class="button" type="submit">Register</button>
+          </form>
+          <span class="accounts">or do it via other accounts</span>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+              alt="google"
+              width="18px"
+              height="18px"
+              class="icon"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="apple"
+              width="15px"
+              height="20px"
+              class="icon"
+            />
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-color-icon.png"
+              alt="facebook"
+              width="20px"
+              height="20px"
+              class="icon"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
